@@ -1,0 +1,32 @@
+{
+  "name": "myethwallettbot",
+  "version": "0.0.2",
+  "main": "index.js",
+  "author": "volcmen <volcmen@gmail.com>",
+  "license": "VLC",
+  "private": true,
+  "dependencies": {
+    "node-fetch": "^2.0.0",
+    "telebot": "^1.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/node": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/preset-stage-2": "^7.0.0-beta.40",
+    "babel-eslint": "^8.2.2",
+    "chokidar": "^2.0.2",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "webpack": "^4.0.1"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env", "@babel/preset-stage-2"],
+    "ignore": ["node_modules", "build"]
+  },
+  "scripts": {
+    "start": "babel-node index.js",
+    "build": "babel-node tools/run build"
+  }
+}
